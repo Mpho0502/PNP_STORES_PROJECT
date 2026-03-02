@@ -76,21 +76,14 @@ SELECT [ProductID]
 
 --4. Come up with own observations of weird things which you have seen in the data.
 
+
+
+
 --5. Security: Create PnP Data Engineer, Data Analyst, Data Scientist, and Manager Accounts.
 
-USE [master]
-GO
-
-/* For security reasons the login is created disabled and with a random password. */
-
-CREATE LOGIN [Ora_PnP_Data_Engineer] WITH PASSWORD=N'zIo3xCuN414OUOctk9vcGOHZQa+PY1HjupedPTm+UVs=', DEFAULT_DATABASE=[PNP_STORES], DEFAULT_LANGUAGE=[us_english], CHECK_EXPIRATION=ON, CHECK_POLICY=ON
-GO
-
-CREATE LOGIN [Mpho_PnP_Data_Analyst] WITH PASSWORD=N'OhG/JtCeF7mt1XCQDUDCmA14TM0//WV9pp04AYnTS5I=', DEFAULT_DATABASE=[PNP_STORES], DEFAULT_LANGUAGE=[us_english], CHECK_EXPIRATION=ON, CHECK_POLICY=ON
-GO
-
-CREATE LOGIN [Enid_PnP_Data_Scientist] WITH PASSWORD=N'ousPsbGIjKPYJzmnoOSHTpRy35y5Eofk8RWjjkus07s=', DEFAULT_DATABASE=[PNP_STORES], DEFAULT_LANGUAGE=[us_english], CHECK_EXPIRATION=ON, CHECK_POLICY=ON
-GO
-
-CREATE LOGIN [Mat_PnP_Manager] WITH PASSWORD=N'UogacYoXpsHB8Wr1zNuYuzUkqPi4UBW49r4mHWYqp2Q=', DEFAULT_DATABASE=[PNP_STORES], DEFAULT_LANGUAGE=[us_english], CHECK_EXPIRATION=ON, CHECK_POLICY=ON
-GO
+CREATE LOGIN 
+ [Ora_PnP_Data_Engineer]
+,[Mpho_PnP_Data_Analyst]
+,[Enid_PnP_Data_Scientist] 
+,[Mat_PnP_Manager] 
+Go
