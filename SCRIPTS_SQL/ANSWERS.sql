@@ -72,11 +72,21 @@ SELECT [ProductID]
       ,[Quantity]
       ,[UnitPrice]
       ,[TotalAmount]
-  FROM [PNP_STORES].[dbo].[MasterView]
+  FROM [PNP_STORES].[dbo].[MasterView] 
+  where Category = 'Beverages'
+  order by ProductName
+
 
 --4. Come up with own observations of weird things which you have seen in the data.
 
-
+-- Barcode 6009803567890, Coca Cola 2L, appears in 7 provinces
+-- 2 provinces missing: mpumalanga and free state
+-- Ayanda Zulu works in every province
+--Refilwe Maseko works in every province
+-- Barcode 6001012345678, Danone Yogurt 1kg, is in every store
+-- Staples: Tastic Rice 2kg, Snowflake Cake Flour 2.5kg, Iwisa Maize Meal 5kg, each use a barcode that is repetitive in all stores
+-- Beverages: Ricoffy 750g,Liqui Fruit Orange Juice 1L,Five Roses Tea 100 Bags, each use a barcode that is repetitive in all stores
+--
 
 
 --5. Security: Create PnP Data Engineer, Data Analyst, Data Scientist, and Manager Accounts.
