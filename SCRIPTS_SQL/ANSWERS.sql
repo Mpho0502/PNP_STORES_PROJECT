@@ -76,7 +76,7 @@ SELECT [ProductID]
 
 --4. Come up with own observations of weird things which you have seen in the data.
 
--- Barcode 6009803567890, Coca Cola 2L, appears in 7 provinces
+-- Barcode 6009803567890, Coca Cola 2L, appears in all the stores from the 7 provinces
 -- 2 provinces missing: mpumalanga and free state
 -- Ayanda Zulu works in every province
 -- Refilwe Maseko works in every province
